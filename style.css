@@ -10,21 +10,46 @@
     align-items: center;
     padding: 20px;
 }
-ul{
-    list-style: none;
+
+
+.car{
+  margin-top: 5%;
+  font-size: 22px;
+  border-radius: 5px;
+  background-color:gray;
 }
 .menu-list{
+    list-style: none;
     display: flex;
     gap: 10px;
     align-items: center;
-
 }
+
 .menu-link{
     text-decoration: none;
     font: bold;
     color: #949494;
     font-size: 22px;
+    transition: 2ms ease-in;
+    padding: 15px;
+    transition: 2ms ease-in;
+    position: relative;
+
 }
+.menu-link::before{
+  content: ' ';
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 0px;
+  height: 2px;
+  transition: all 1s ease;
+}
+.menu-link:hover::before{
+  width: 100%;
+  background-color: rgb(112, 65, 31);
+}
+
 #banner-home{
     display: flex;
     gap: 10px;
@@ -49,23 +74,53 @@ ul{
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.783);
   }
-  .card img {
-    width:60%;
-    height: 60%;
+  .cecile-image{
+    width: 50%;
+    height:50%;
     justify-content: center;
     align-items: center;
-    /* border-top-left-radius: 12px;
-    border-top-right-radius: 12px; */
     margin-left: 20%;
-    margin-top: 5%;
+    margin-top: 10px;
   }
-  .card div {
+  .text-cecile{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 90px;
+
+  }
+  .mesa-image{
+    width: 50%;
+    height:30%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    margin-top: 10px;
+  }
+
+  .text-mesa{
+    display: flex;
+    margin-top: 20%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .sofa-image{
+    width:100%;
+    height:40%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .text-sofa{
+    display: flex;
+    margin-top: 5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   section{
     margin-top: 20px;
@@ -84,6 +139,42 @@ ul{
   .grid-images{
     display: flex;
     justify-content: center;
+  }
+ .grid1:hover{
+  transform: translateY(-10px);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  }
+ .grid2:hover{
+  transform: translateY(-10px);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  }
+ .grid3:hover{
+  transform: translateY(-10px);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  }
+ .grid4:hover{
+  transform: translateY(-10px);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  }
+  .grid1{
+    width:90%;
+    height:90%;
+  }
+  .grid2{
+    width:90%;
+    height:90%;
+  }
+  .grid3{
+    width:90%;
+    height:90%;
+  }
+  .grid4{
+    width:90%;
+    height:90%;
   }
 footer {
   background-color: gray;
@@ -131,7 +222,6 @@ footer {
 .footer-form button {
   padding: 10px;
   font-size: 1.6rem;
-  background-color: ;
   border-radius: 10px;
   cursor: pointer;
   background-color: rgb(112, 65, 31);
@@ -139,4 +229,10 @@ footer {
 
 .footer-contact p {
   margin-bottom: 10px;
+}
+.footer-icons{
+  font-size: 45px;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
 }
