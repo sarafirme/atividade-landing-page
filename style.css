@@ -44,16 +44,18 @@ ul{
 }
 .card {
     background-color: #fff;
-    width: 100px;
-    height: 150px;
+    width: 250px;
+    height: 350px;
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.783);
   }
   .card img {
-    width: 60%;
-    height: 150px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    width:60%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    /* border-top-left-radius: 12px;
+    border-top-right-radius: 12px; */
     margin-left: 20%;
     margin-top: 5%;
   }
@@ -62,15 +64,16 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60%;
+    text-align: center;
+    height: 90px;
   }
   section{
     margin-top: 20px;
     display: flex;
-    gap: 25%;
+    gap: 15%;
     justify-content: center;
   }
-  .title-cards{
+  .title-itens{
     margin-top: 17px;
     background-color: rgb(112, 65, 31);
     justify-content: center;
@@ -78,3 +81,62 @@ ul{
     border-radius: 5px;
 
   }
+  .grid-images{
+    display: flex;
+    justify-content: center;
+  }
+footer {
+  background-color: gray;
+  color: black;
+  padding: 20px 0;
+  font-size: 1.6rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 0;
+  padding: 20px;
+}
+
+.footer-form, .footer-contact {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-form h3, .footer-contact h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-form label {
+  margin-bottom: 5px;
+}
+
+.footer-form input {
+  border-radius: 20px;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 1.4rem;
+}
+
+.footer-form button {
+  padding: 10px;
+  font-size: 1.6rem;
+  background-color: ;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(112, 65, 31);
+}
+
+.footer-contact p {
+  margin-bottom: 10px;
+}
